@@ -6,7 +6,7 @@ public class BookManager implements BookOperations {
 
     public BookManager() {
         this.books = new ArrayList<>();
-        // Dodaj wybrane książki do listy
+
         books.add(new Book("Ostatnie życzenie", "Andrzej Sapkowski", "ISBN1", 1993));
         books.add(new Book("Future", "Dmitry Głuchowski", "ISBN2", 2014));
         books.add(new Book("Diuna", "Frank Herbert", "ISBN3", 1965));

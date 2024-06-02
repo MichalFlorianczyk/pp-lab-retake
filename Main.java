@@ -15,9 +15,9 @@ public class Main {
             System.out.println("[5] Wyjdź");
             System.out.print("Wybierz opcję: ");
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Konsumuj znak nowej linii
+            scanner.nextLine();
 
-            switch (choice) {
+            switch (choice) { // test
                 case 1:
                     addBook(scanner);
                     break;
@@ -48,7 +48,7 @@ public class Main {
         String isbn = scanner.nextLine();
         System.out.print("Wprowadź rok: ");
         int year = scanner.nextInt();
-        scanner.nextLine(); // Konsumuj znak nowej linii
+        scanner.nextLine();
         Book book = new Book(title, author, isbn, year);
         bookManager.addBook(book);
         System.out.println("Książka dodana.");
@@ -89,7 +89,7 @@ public class Main {
             String author = scanner.nextLine();
             System.out.print("Wprowadź nowy rok: ");
             int year = scanner.nextInt();
-            scanner.nextLine(); // Konsumuj znak nowej linii
+            scanner.nextLine();
             Book newBook = new Book(title, author, isbn, year);
             bookManager.updateBook(oldBook, newBook);
             System.out.println("Książka zaktualizowana.");

@@ -13,8 +13,6 @@ public class Book {
         this.year = year;
     }
 
-    // Gettery i settery
-
     public String getTitle() {
         return title;
     }
